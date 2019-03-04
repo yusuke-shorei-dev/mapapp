@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2737C0062222748700171103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C0052222748700171103 /* AppDelegate.swift */; };
-		2737C0082222748700171103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C0072222748700171103 /* ViewController.swift */; };
-		2737C00B2222748700171103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2737C0092222748700171103 /* Main.storyboard */; };
 		2737C00D2222748800171103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2737C00C2222748800171103 /* Assets.xcassets */; };
-		2737C0102222748800171103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2737C00E2222748800171103 /* LaunchScreen.storyboard */; };
 		2737C01B2222748800171103 /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C01A2222748800171103 /* MapAppTests.swift */; };
 		2737C0262222748800171103 /* MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C0252222748800171103 /* MapAppUITests.swift */; };
+		2737C035222B755800171103 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C033222B755800171103 /* MainViewController.swift */; };
+		2737C036222B755800171103 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2737C034222B755800171103 /* MainViewController.xib */; };
+		2737C038222B7BB800171103 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737C037222B7BB800171103 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,7 @@
 /* Begin PBXFileReference section */
 		2737C0022222748700171103 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2737C0052222748700171103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2737C0072222748700171103 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2737C00A2222748700171103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2737C00C2222748800171103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2737C00F2222748800171103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2737C0112222748800171103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2737C0162222748800171103 /* MapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2737C01A2222748800171103 /* MapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppTests.swift; sourceTree = "<group>"; };
@@ -47,6 +44,9 @@
 		2737C0212222748800171103 /* MapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2737C0252222748800171103 /* MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITests.swift; sourceTree = "<group>"; };
 		2737C0272222748800171103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2737C033222B755800171103 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2737C034222B755800171103 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2737C037222B7BB800171103 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				2737C0052222748700171103 /* AppDelegate.swift */,
-				2737C0072222748700171103 /* ViewController.swift */,
-				2737C0092222748700171103 /* Main.storyboard */,
 				2737C00C2222748800171103 /* Assets.xcassets */,
-				2737C00E2222748800171103 /* LaunchScreen.storyboard */,
 				2737C0112222748800171103 /* Info.plist */,
+				2737C033222B755800171103 /* MainViewController.swift */,
+				2737C034222B755800171103 /* MainViewController.xib */,
+				2737C037222B7BB800171103 /* Map.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -229,9 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2737C0102222748800171103 /* LaunchScreen.storyboard in Resources */,
 				2737C00D2222748800171103 /* Assets.xcassets in Resources */,
-				2737C00B2222748700171103 /* Main.storyboard in Resources */,
+				2737C036222B755800171103 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2737C0082222748700171103 /* ViewController.swift in Sources */,
+				2737C035222B755800171103 /* MainViewController.swift in Sources */,
+				2737C038222B7BB800171103 /* Map.swift in Sources */,
 				2737C0062222748700171103 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +291,6 @@
 			targetProxy = 2737C0222222748800171103 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2737C0092222748700171103 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2737C00A2222748700171103 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2737C00E2222748800171103 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2737C00F2222748800171103 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2737C0282222748800171103 /* Debug */ = {
@@ -432,17 +413,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L53D6C8B3;
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sample.MapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shanashana2727.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,17 +434,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L53D6C8B3;
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sample.MapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shanashana2727.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
